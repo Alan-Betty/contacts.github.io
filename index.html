@@ -5,6 +5,9 @@
 <meta charset="UTF-8">
 <title>Contact us form validation using Javascript</title>
 <script>
+    function myFunction() {
+        window.location.href="https://forms.gle/mweY81cXE3raKP13A";  
+      }
 function validate(){
 var name1  = document.getElementById("name").value;
 var phone1 = document.getElementById("phone").value;
@@ -53,7 +56,7 @@ return true;}
             <div class="input_field">
                 <textarea placeholder="Message" id="message"></textarea></div>
                 <div class="btn">
-                   <a href='https://forms.gle/mweY81cXE3raKP13A'></a> <input type="submit">
+                   <a href='https://forms.gle/mweY81cXE3raKP13A'></a> <input type="submit" onClick="myFunction()"/>
                    
                 </div>
                 <div id="error_message"></div></form>
